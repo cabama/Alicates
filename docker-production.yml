@@ -2,24 +2,6 @@ version: '3'
 
 services:
 
-  alicatesService:
-    image: cabama/alicate:lts
-    build: alicatesService/.
-    command: yarn dev:watch
-    networks:
-      - hormiguitas
-    volumes:
-      - ./alicatesService/src:/usr/src/alicates/src
-      - ./alicatesService/bin:/usr/src/alicates/bin
-      - ./alicatesService/public:/usr/src/alicates/public
-    ports:
-      - "2222:2222"
-    deploy:
-      restart_policy:
-        condition: on-failure
-      placement:
-        constraints: [node.role == manager]
-
   jenkins:
     image: cabama/jenkins:lts
     build: jenkins/.

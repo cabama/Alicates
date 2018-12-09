@@ -1,0 +1,17 @@
+{
+  "repositories": {
+    "jaguerService": {
+      "name": "jaguerService",
+      "repository": "git@github.com:cabama/jaguerMasterService.git"
+    },
+    "jaguerClient": {
+      "name": "jaguerClient",
+      "repository": "git@github.com:cabama/reactStart.git"
+    }
+  },
+  "dataBases":{
+    "jaguer": {
+      "path": ""
+    }
+  }
+}
