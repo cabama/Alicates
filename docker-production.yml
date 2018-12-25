@@ -6,8 +6,8 @@ services:
     image: alicates/nginx
     ports: 
       - "80:80"
-    networks: 
-      - hormiguitas
+    volumes:
+      - /var/lib/jenkins/jobs/:/usr/share/nginx/
     deploy:
       replicas: 1
       restart_policy:
@@ -15,12 +15,3 @@ services:
       placement:
         constraints:
           - node.role == manager
-
-
-volumes:
-  portainer_data:
-
-
-
-networks:
-  hormiguitas:
