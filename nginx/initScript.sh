@@ -1,6 +1,6 @@
 #!/bin/bash
 
-domains=(jagermasters.es www.jagermasters.es api.jagermasters.es www.api.jagermasters.es)
+domains=(jagermasters.es api.jagermasters.es reshuhormiguero.club)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="barreymata@gmail.com" # Adding a valid address is strongly recommended
